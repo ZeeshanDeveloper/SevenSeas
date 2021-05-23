@@ -10206,7 +10206,7 @@ form.tracking-form {
 }
 
     .socials__link:hover {
-        color: #00997d;
+        color: #949494;
     }
 
 .socials--dark .socials__link {
@@ -10591,13 +10591,15 @@ form.tracking-form {
 
 .img-box__details {
     position: absolute;
-    bottom: 0;
     left: 0;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
     width: 100%;
     padding: 0 30px 13px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
@@ -10605,8 +10607,15 @@ form.tracking-form {
     -ms-flex-pack: justify;
     justify-content: space-between;
     z-index: 1;
+    color: white;
+    text-align: center;
 }
-
+.img-box__details .img-box__title {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    margin: auto;
+}
 .img-box__title {
     width: calc(100% - 60px);
     width: 100%;
@@ -13972,6 +13981,10 @@ p {
     line-height: 60px;
     min-width: 190px;
     margin-right: -5px;
+    position: relative;
+}
+.page-header .button--filled::after{
+    content: '';
 }
 
 @media only screen and (min-width:768px) {
@@ -15562,7 +15575,7 @@ p {
     display: inline-block;
     color: #333;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 23px 0 22px 0;
     text-decoration: none;
     text-transform: uppercase;
@@ -15984,7 +15997,7 @@ p {
 .contact-trigger {
     position: relative;
     color: #fff;
-    background: #003d90;
+    background: #03425c;
     padding: 28px 30px 40px 30px;
     width: 100%;
     max-width: 370px;
@@ -18717,7 +18730,7 @@ section.catalog {
 }
 
     .page-footer__logo img {
-        height: 96px;
+        height: auto;
         max-width: auto;
     }
 

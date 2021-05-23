@@ -6,6 +6,9 @@ body {
   font-family: 'Titillium Web', sans-serif !important;
   width: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
+  height: auto;
+  position: relative;
 }
 a{
   text-decoration: none !important;
@@ -53,6 +56,73 @@ ul{
 .img-box__overlay{
   background: rgb(0 0 0 / 45%) !important;
 }
+/*top nav*/
+.top-n{
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 11;
+  border-bottom: 1px solid rgb(17 17 17 / 5%);
+}
+.top-n a{
+  color:#03425c;
+}
+.top-n .left{
+  float: left;
+}
+.top-n .left .bx{
+  float: left;
+  border-right: 1px solid rgb(17 17 17 / 5%);
+  padding-right: 15px;
+  margin-right: 15px;
+}
+.top-n .left .bx:last-child{
+  margin-right: 0px;
+  padding-right: 0px;
+  border: 0px;
+}
+.top-n .left .bx a{
+  overflow: hidden;
+  padding: 3px 0px;
+  display: block;
+}
+.top-n .left .bx svg{
+  fill: #03425c;
+  margin-right: 4px;
+  margin-top: 3px;
+  float: left;
+}
+.top-n .left .bx span{
+  font-size: 14px;
+  float: left;
+}
+.top-n .right{
+ float: right;
+}
+.top-n .right ul{
+
+}
+.top-n .right ul li{
+  display: block;
+  float: left;
+}
+.top-n .right ul li a{
+  font-size: 14px;
+  float: left;
+  overflow: hidden;
+  padding: 3px 0px;
+  display: block;
+  border-left: 1px solid rgb(17 17 17 / 5%);
+  padding-left: 15px;
+  margin-left: 15px;
+  color: #03425c;
+}
+.top-n .right ul li:first-child a{
+  margin-left: 0px;
+  padding-left: 0px;
+  border: 0px;
+}
 /*home*/
 body{
   padding-top: 0px;
@@ -61,7 +131,7 @@ body{
 .nav-cus{
   width: 100%;
   position: fixed;
-  top: 0px;
+  top: 29px;
   z-index: 10;
   background-color: white;
   box-shadow: 0px 0px 10px rgb(17 17 17 / 15%);
@@ -75,23 +145,35 @@ body{
 .nav-cus .logo a{
 
 }
-.nav-cus .logo img{
-  padding: 10px 0px;
+.nav-cus .logo img {
+  padding: 18px 0px;
+  width: 190px;
 }
 .nav-cus .right{
   float: right;
 }
 .nav-cus .right ul{
   float: left;
-  margin-right: 20px;
+  margin-right: 0px;
+  display: block;
+  border-radius: 0px;
 }
 .nav-cus .right ul li{
   display: inline-block;
+  padding: 0px;
+  border: 0px;
 }
 .nav-cus .right ul li a{
-  color: #2b98d3;
-  padding: 27px 9px;
+  color: #03425c;
+  padding: 27px 16px;
   display: block;
+}
+.nav-cus .right ul li.active{
+  background-color: #03425c;
+  border-color: #03425c;
+}
+.nav-cus .right ul li.active a{
+  color: white;
 }
 .nav-cus .right .nav-btn{
   float: left;
@@ -100,19 +182,19 @@ body{
   display: block;
   color: rgb(255 255 255 / 90%);
   font-weight: 300;
-  padding: 27px 55px;
-  background: rgb(71,194,250);
-  background: linear-gradient(
+  padding: 32px 30px;
+  background: rgb(3 66 92);
+  background: linear-gradient( 
 45deg
-, rgba(71,194,250,1) 0%, rgba(50,159,198,1) 100%);
+, rgb(10 97 134) 0%, rgb(3 66 92) 100%);
 }
 /*video*/
 .video-home{
   position: relative;
   overflow: hidden;
   padding: 0px 0px;
-  height: 100vh;
-  padding-top: 104px;
+  height: calc(100vh - 0px);
+  padding-top: 108.14px;
 }
 .video-home::after{
   content: '';
@@ -220,6 +302,7 @@ h5 {
 .call-to-action a{
 
 }
+
 /*mbl nav*/
 body.lock {
   height:100vh;
@@ -230,7 +313,7 @@ body.lock {
   width: 100%;
   height: 100%;
   top: 0px;
-  z-index: 10;
+  z-index: 14;
   overflow-y: auto;
   -webkit-transition: left .25s ease-in-out;
   -o-transition: left .25s ease-in-out;
@@ -256,10 +339,10 @@ body.lock {
       .mbl-nav .box .norm {
       }
       .mbl-nav .box .head {
-          border-bottom: 1px solid rgb(0 0 0 / 15%);
-          padding: 14px 30px;
-          overflow: hidden;
-          text-align: center;
+        border-bottom: 1px solid rgb(0 0 0 / 15%);
+        padding: 28px 30px;
+        overflow: hidden;
+        text-align: center;
       }
           .mbl-nav .box .head img.mbl-nav-opener {
               display:none;
@@ -309,7 +392,7 @@ body.lock {
   margin: 0px;
   text-transform: capitalize;
   color: white;
-  background: #0082cd;
+  background: #03425c;
   padding: 10px 20px;
 }
 .service-modal .modal-dialog .modal-header h5{
@@ -335,6 +418,50 @@ font-size: 18px;
 }
 .service-modal .modal-dialog .modal-footer{
 
+}
+/*service-bx*/
+.service-bx{
+
+}
+.service-bx .img-box{
+
+}
+.service-bx .img-box .backd{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #03425c;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.service-bx .img-box:hover .backd{
+  opacity: 1;
+}
+.service-bx .img-box .backd .txt{
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  padding: 0px 18px;
+}
+.service-bx .img-box .backd .read-btn{
+  background: white;
+  color: #03425c;
+  width: 115px;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  bottom: 45px;
+  font-size: 15px;
+  padding: 5px 0px;
 }
 @media (min-width:0px) and (max-width:1026px){
   .nav-cus .right ul{
@@ -383,10 +510,14 @@ font-size: 18px;
   }
   .nav-cus .logo img {
     padding: 15px 0px;
-    height: 79px;
+    height: auto;
   }
   .nav-cus .mbl-nav-opener{
     position: absolute;
+    padding: 24px 0px;
+  }
+  .nav-cus .mbl-nav-opener img {
+    width: 20px;
   }
   .video-home .box{
     text-align: center;
@@ -455,7 +586,34 @@ font-size: 18px;
     text-align: center;
   }
   .service-modal img{
-    padding: 0px 52px;
-    margin-top: 30px;
+    padding: 0px 0px;
+    margin-top: 0px;
+  }
+  .top-n .left{
+    width: 100%;
+  }
+  .top-n .left .bx {
+    border-right: 1px solid rgb(17 17 17 / 5%);
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 50%;
+    text-align: center;
+  }
+  .top-n .left .bx a{
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .top-n .right{
+    display: none;
+  }
+  .location-item {
+    margin-bottom: 10px !important;
+  }
+  #served{
+    padding-top: 15px;
+    padding-bottom: 58px;
+  }
+  .calculator {
+    padding: 125px 0 !important;
   }
 }
