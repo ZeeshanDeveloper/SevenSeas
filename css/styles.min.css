@@ -11305,6 +11305,7 @@ form.tracking-form {
         -o-transition: transform .6s;
         transition: transform .6s;
         transition: transform .6s,-webkit-transform .6s;
+        background: #03425c;
     }
 
     .location-item__img:hover img {
@@ -11972,6 +11973,7 @@ form.tracking-form {
 
 .advantages-item__title {
     color: #003d90;
+    color: #fff;
     line-height: 60px;
     margin-bottom: 2px;
 }

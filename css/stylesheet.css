@@ -463,6 +463,16 @@ font-size: 18px;
   font-size: 15px;
   padding: 5px 0px;
 }
+.w-sm-btn{
+  background: white;
+    color: #03425c;
+    width: 115px;
+    text-align: center;
+    margin: auto;
+    bottom: 45px;
+    font-size: 15px;
+    padding: 5px 0px;
+}
 @media (min-width:0px) and (max-width:1026px){
   .nav-cus .right ul{
     display: none;
@@ -615,5 +625,11 @@ font-size: 18px;
   }
   .calculator {
     padding: 125px 0 !important;
+  }
+  .location-item .advantages-item__title{
+    font-size: 39px;
+  }
+  .location-item .img-box__details{
+    padding-bottom: 0px;
   }
 }
