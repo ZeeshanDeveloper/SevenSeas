@@ -473,6 +473,25 @@ font-size: 18px;
     font-size: 15px;
     padding: 5px 0px;
 }
+#served{
+
+}
+#served .img-box__details{
+  z-index: -1;
+}
+#served a{
+
+}
+#served a .location-item{
+
+}
+#served a .location-item .img--box{
+}
+#served a:hover .location-item .img--box{
+  -webkit-transform: scale(1.17);
+  -ms-transform: scale(1.17);
+  transform: scale(1.17);
+}
 @media (min-width:0px) and (max-width:1026px){
   .nav-cus .right ul{
     display: none;

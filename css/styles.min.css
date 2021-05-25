@@ -13105,7 +13105,7 @@ p {
 .accordion--style-2 .accordion__close {
     height: 30px;
     width: 30px;
-    border: 2px solid #003d90;
+    border: 2px solid #0f4760;
 }
 
     .accordion--style-2 .accordion__close::after, .accordion--style-2 .accordion__close::before {
@@ -13117,7 +13117,7 @@ p {
 }
 
 .accordion--style-2 .accordion__close--active {
-    background: #003d90;
+    background: #0f4760;
 }
 
 .counter {
